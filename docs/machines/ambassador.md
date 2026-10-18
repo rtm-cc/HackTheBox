@@ -237,7 +237,7 @@ select * from data_source;
 
 ```
 
-![](../.gitbook/assets/image-1-2.png)
+![](../assets/image-1-2.png)
 
 ## Mysql with Grafana user
 
@@ -304,7 +304,7 @@ password: anEnglishManInNewYork027468
 ```
 :::
 
-![](../.gitbook/assets/image-4-1.png)
+![](../assets/image-4-1.png)
 
 ## Post exploitation
 

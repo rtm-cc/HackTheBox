@@ -134,7 +134,7 @@ winpeas.exe
    =================================================================================================
 ```
 
-![](../.gitbook/assets/image-3-2.png)
+![](../assets/image-3-2.png)
 
 With that, we can put an executable in this path, and it will treat as part of the service
 

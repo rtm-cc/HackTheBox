@@ -30,7 +30,7 @@ set RHOSTS $IP
 run
 ```
 
-![](../.gitbook/assets/image-5.png)
+![](../assets/image-5.png)
 
 * Run eternal blue explit to root the machine
 
@@ -40,11 +40,11 @@ set RHOSTS $IP
 run
 ```
 
-![](../.gitbook/assets/image-2.png)
+![](../assets/image-2.png)
 
 Can try to change the payload to meterpetrer with staged payload
 
-![](../.gitbook/assets/image-2-1.png)
+![](../assets/image-2-1.png)
 
 ## Manual way
 

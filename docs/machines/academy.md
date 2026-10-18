@@ -262,7 +262,7 @@ Enter Password : student
 http://10.0.2.7/academy/my-profile.ph
 ```
 
-![](../.gitbook/assets/image-1-1.png)
+![](../assets/image-1-1.png)
 
 * Search in google php reverse shell
 
