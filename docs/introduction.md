@@ -22,6 +22,7 @@ Solving HackTheBox machines is a highly practical way to understand vulnerabilit
 ## 📠 [Machines Walkthroughs](/HackTheBox/machines/ambassador/)
 
 Check out our writeups sorted by machine name:
+
 *   [Ambassador](/HackTheBox/machines/ambassador/)
 *   [Precious](/HackTheBox/machines/precious/)
 *   [Blue](/HackTheBox/machines/blue/)

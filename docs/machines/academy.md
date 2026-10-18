@@ -2,7 +2,6 @@
 title: "Academy"
 ---
 
-
 ## Enumeration
 
 ```
@@ -66,14 +65,12 @@ Hello Heath !
 Grimmie has setup the test website for the new academy.
 I told him not to use the same password everywhere, he will change it ASAP.
 
-
 I couldn't create a user via the admin panel, so instead I inserted directly into the database with the following command:
 
 INSERT INTO `students` (`StudentRegno`, `studentPhoto`, `password`, `studentName`, `pincode`, `session`, `department`, `semester`, `cgpa`, `creationdate`, `updationDate`) VALUES
 ('10201321', '', 'cd73502828457d15655bbd7a63fb0bc8', 'Rum Ham', '777777', '', '', '', '7.60', '2021-05-29 14:36:56', '');
 
 The StudentRegno number is what you use for login.
-
 
 Le me know what you think of this open-source project, it's from 2020 so it should be secure... right ?
 We can always adapt it to our needs.
@@ -86,11 +83,9 @@ hash-identifier
 
 cd73502828457d15655bbd7a63fb0bc8
 
-
 Possible Hashs:
 [+] MD5
 [+] Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
-
 
 echo -n "cd73502828457d15655bbd7a63fb0bc8" > /tmp/academy-hash.txt
 sudo gunzip /usr/share/wordlists/rockyou.txt.gz
@@ -205,9 +200,7 @@ sudo apt install ffuf
 
 FFUF -> Can be better to identify only the first level directories
 
-
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://10.0.2.7/FUZZ
-
 
         /'___\  /'___\           /'___\       
        /\ \__/ /\ \__/  __  __  /\ \__/       
@@ -257,7 +250,6 @@ http://10.0.2.7/academy/
 
 Enter Reg no : 
 Enter Password : student
-
 
 http://10.0.2.7/academy/my-profile.ph
 ```
@@ -339,16 +331,10 @@ Linux Privesc Checklist: https://book.hacktricks.xyz/linux-unix/linux-privilege-
   Blue: Users without console & mounted devs
   Green: Common things (users, groups, SUID/SGID, mounts, .sh scripts, cronjobs) 
 
-
-
-
-
 * * * * * /home/grimmie/backup.sh
-
 
 grimmie:x:1000:1000:administrator,,,:/home/grimmie:/bin/bash                                                                                                 
 root:x:0:0:root:/root:/bin/bash
-
 
 ╔══════════╣ Searching passwords in config PHP files
 $cfg['Servers'][$i]['AllowNoPassword'] = false;                                                                                                              

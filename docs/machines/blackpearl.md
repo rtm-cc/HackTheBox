@@ -2,9 +2,6 @@
 title: "Blackpearl"
 ---
 
-
-
-
 1. ffuf give us nothing
 2. dnsrecon -r 127.0.0.0/24 -n 10.0.2.X -d blah
    1. blackpearl.local 127.0.0.1

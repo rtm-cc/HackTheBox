@@ -2,7 +2,6 @@
 title: "Blue"
 ---
 
-
 ## Enumeration
 
 ```
@@ -68,6 +67,4 @@ Can try to change the payload to meterpetrer with staged payload
 * kiwi
   * help
   * creds\_all
-
-
 

@@ -2,7 +2,6 @@
 title: "Precious"
 ---
 
-
 ## Enumeration
 
 ```bash
@@ -17,15 +16,12 @@ PORT      STATE    SERVICE
 80/tcp    open     http
 ```
 
-
-
 ## HTTP server
 
-:::danger
-To make the website work I had to add the IP into hosts file
-
-echo "10.129.80.85 precious.htb" >> /etc/hosts
-:::
+!!! danger
+    To make the website work I had to add the IP into hosts file
+    
+    echo "10.129.80.85 precious.htb" >> /etc/hosts
 
 ![](../assets/image-3.png)
 
@@ -34,8 +30,6 @@ echo "10.129.80.85 precious.htb" >> /etc/hosts
 ```python
 python3 -m http.server 80
 ```
-
-
 
 Intercept traffic and send to repeater
 
@@ -47,13 +41,10 @@ With the repeater option we can identify interesting things in the response
 
 The most prominent is related to WKHTMLTOPDF, and with a quick google we can find several exploits to it, however, none of them worked.&#x20;
 
-
-
 ### Other possible vulnerable services
 
 ![](../assets/image.png)
 
-:::danger
-TO BE CONTINUED ....
-:::
+!!! danger
+    TO BE CONTINUED ....
 
